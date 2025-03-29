@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pagina Inicial</title>
+<base>
+<style type="text/css">
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+section {
+	border-radius: 10px;
+	background-color: #ddd;
+	width: 50%;
+	margin: 10px auto;
+	padding: 20px;
+}
+
+section h1 {
+	text-align: center;
+	margin: 0;
+}
+
+input {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	margin: 8px 0;
+	padding: 12px 20px;
+	outline: none;
+}
+
+input[type=text], input[type=email] {
+	border: 1px solid #ccc
+}
+
+input[type=checkbox] {
+	display: inline;
+	width: 5%;
+}
+
+input[type=submit], input[type=reset] {
+	background-color: #4E97D1;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #00569D;
+}
+</style>
+
+</head>
+<body>
+	<section>
+		<h1>Inscreva-se nos cursos de extensão</h1>
+		<form action="register" method="post">
+			<label for="name">Nome:</label> <input type="text" name="name"
+				id="name"> <label for="email">Email:</label> <input
+				type="email" name="email" id="email">
+			<fieldset>
+				<legend>Quais cursos gostaria de sse inscrever?</legend>
+
+				<input type="checkbox" name="options" id="bootstrap"
+					value="Bootstrap"> <label for="bootstrap">Bootstrap</label>
+
+				<input type="checkbox" name="options" id="animation"
+					value="Animação"> <label for="animation">Animações
+					em CSS 3</label> <input type="checkbox" name="options" id="design"
+					value="design"> <label for="design">Design Patterns</label>
+			</fieldset>
+			<input type="submit" value="Enviar">
+		</form>
+	</section>
+
+</body>
+</html>
